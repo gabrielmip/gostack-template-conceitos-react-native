@@ -63,7 +63,7 @@ describe("Likes", () => {
 
     fireEvent.press(getByTestId(`like-button-${repositoryId}`));
 
-    await actWait();
+    await actWait(100);
 
     expect(getByTestId(`repository-likes-${repositoryId}`)).toHaveTextContent("1 curtida");
 
